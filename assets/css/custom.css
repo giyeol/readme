@@ -18,3 +18,63 @@
   bottom: 0;
   width: 100%;
 }
+
+.skill-wrapper {
+  display: flex;
+}
+
+.skill-wrapper .skill-title {
+  display: inline-flex;
+  white-space: nowrap;
+}
+
+.skill-wrapper .skill-description {
+  display: inline-flex;
+  white-space: nowrap;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-left: .25rem;
+}
+
+.skill-wrapper .skill-description code {
+  margin-left: .25rem;
+  line-height: 1;
+}
+
+.skill-wrapper .skill-description code:first-child {
+  margin-left: 0;
+}
+
+.content ul.sub {
+  list-style-type: auto;
+}
+
+.project-wrapper h3.company {
+  margin-top: .6666em;
+}
+
+@media (max-width: 1023px) {
+  .section {
+    padding-top: 1.5rem;
+  }
+
+  .content ul {
+    margin-left: 1rem;
+  }
+
+  .content ul ul {
+    margin-top: .25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skill-wrapper .skill-description {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .skill-wrapper .skill-description::-webkit-scrollbar {
+    display: none;
+  }
+}
