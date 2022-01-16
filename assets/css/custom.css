@@ -19,7 +19,7 @@
   width: 100%;
 }
 
-.skill-wrapper {
+/* .skill-wrapper {
   display: flex;
 }
 
@@ -44,6 +44,23 @@
 
 .skill-wrapper .skill-description code:first-child {
   margin-left: 0;
+} */
+
+.press-wrapper {
+  margin-top: .25rem !important;
+}
+
+.press-wrapper li {
+  line-height: .75rem;
+}
+
+.press-wrapper li a {
+  font-size: .75rem;
+}
+
+.press-wrapper li a:before {
+  content: "📰";
+  margin-right: .25rem;
 }
 
 .content ul.sub {
