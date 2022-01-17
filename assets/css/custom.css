@@ -1,3 +1,8 @@
+body {
+  background-size: 1.75rem 1.75rem;
+  background-image: linear-gradient(to right, #eee 1px, transparent 1px), linear-gradient(to bottom, #eee 1px, transparent 1px);
+}
+
 .root-wrapper {
   min-height: 100vh;
   overflow: hidden;
@@ -19,33 +24,6 @@
   width: 100%;
 }
 
-/* .skill-wrapper {
-  display: flex;
-}
-
-.skill-wrapper .skill-title {
-  display: inline-flex;
-  white-space: nowrap;
-}
-
-.skill-wrapper .skill-description {
-  display: inline-flex;
-  white-space: nowrap;
-  width: 100%;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  margin-left: .25rem;
-}
-
-.skill-wrapper .skill-description code {
-  margin-left: .25rem;
-  line-height: 1;
-}
-
-.skill-wrapper .skill-description code:first-child {
-  margin-left: 0;
-} */
-
 .press-wrapper {
   margin-top: .25rem !important;
 }
@@ -63,12 +41,8 @@
   margin-right: .25rem;
 }
 
-.content ul.sub {
-  list-style-type: auto;
-}
-
-.project-wrapper h3.company {
-  margin-top: .6666em;
+.content ul li.sub {
+  margin-top: 1rem;
 }
 
 @media (max-width: 1023px) {
@@ -82,16 +56,5 @@
 
   .content ul ul {
     margin-top: .25rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .skill-wrapper .skill-description {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
-
-  .skill-wrapper .skill-description::-webkit-scrollbar {
-    display: none;
   }
 }
