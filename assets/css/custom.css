@@ -114,9 +114,11 @@ body {
   }
 
   .content ul li > span {
-    display: block;
+    display: inline-block;
     white-space: nowrap;
     overflow-x: scroll;
     overflow-y: hidden;
+    line-height: 1;
+    width: 100%;
   }
 }
