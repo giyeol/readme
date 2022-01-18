@@ -1,6 +1,8 @@
 body {
-  background-size: 1.75rem 1.75rem;
+  background-size: 1.9375rem 1.9375rem;
   background-image: linear-gradient(to right, #eee 1px, transparent 1px), linear-gradient(to bottom, #eee 1px, transparent 1px);
+  background-position-y: -.625rem;
+  line-height: 1.6875;
 }
 
 .root-wrapper {
@@ -18,7 +20,7 @@ body {
 }
 
 .footer {
-  padding: 3rem 1.5rem;
+  padding: calc(2.75rem + .5px) 1.5rem;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -26,6 +28,7 @@ body {
 
 .press-wrapper {
   margin-top: .25rem !important;
+  margin-bottom: 1.0625rem !important;
 }
 
 .press-wrapper li {
@@ -42,19 +45,78 @@ body {
 }
 
 .content ul li.sub {
-  margin-top: 1rem;
+  margin-top: 2.25rem;
+}
+
+.content ul li.sub:nth-child(6) {
+  margin-top: calc(2.25rem + .5px);
+}
+
+.content ul li.sub:nth-child(7) {
+  margin-top: calc(2.25rem + .5px);
+}
+
+.content ul li.sub:nth-child(8) {
+  margin-top: calc(2.25rem - 1px);
+}
+
+.content ul li.sub:nth-child(9) {
+  margin-top: calc(2.25rem - 1px);
+}
+
+.content ul li.sub > ul {
+  margin-top: .125rem;
+}
+
+.content ul li.sub:nth-child(6) > ul {
+  margin-top: calc(.125rem + 1px);
+}
+
+.content ul li.sub:nth-child(7) > ul {
+  margin-top: calc(.125rem + 2px);
+}
+
+.content ul li.sub:nth-child(8) > ul {
+  margin-top: calc(.125rem + 2px);
+}
+
+.content ul li.sub:nth-child(9) > ul {
+  margin-top: calc(.125rem + 2px);
+}
+
+.content ul li span {
+  margin-left: .25rem;
+}
+
+.content ul ul {
+  margin-top: .25em;
+}
+
+.content ul:not(:last-child) {
+  margin-left: 2.8175em;
+}
+
+.update-date {
+  margin-top: 2.25rem;
 }
 
 @media (max-width: 1023px) {
-  .section {
-    padding-top: 1.5rem;
-  }
-
   .content ul {
     margin-left: 1rem;
   }
 
-  .content ul ul {
-    margin-top: .25rem;
+  .content li.sub ul {
+    margin-left: 2rem;
+  }
+
+  .content ul:not(:last-child) {
+    margin-left: 2.5em;
+  }
+
+  .content ul li > span {
+    display: block;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
   }
 }
