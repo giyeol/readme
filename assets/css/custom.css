@@ -1,6 +1,6 @@
 body {
   background-size: 1.9375rem 1.9375rem;
-  background-image: linear-gradient(to right, #f3f3f3 1px, transparent 1px), linear-gradient(to bottom, #f3f3f3 1px, transparent 1px);
+  background-image: linear-gradient(to right, #eee 1px, transparent 1px), linear-gradient(to bottom, #eee 1px, transparent 1px);
   background-position-y: -.625rem;
   line-height: 1.6875;
 }
